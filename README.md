@@ -9,7 +9,7 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 
-![](src/assets/demo.png)
+![](docs/assets/demo.png)
 
 ## Taller #2: porcentaajes y descuentos
 
