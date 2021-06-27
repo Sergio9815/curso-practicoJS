@@ -9,6 +9,8 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 
+![](src/assets/demo.png)
+
 ## Taller #2: porcentaajes y descuentos
 
 - Primer paso: definir las fórmulas
