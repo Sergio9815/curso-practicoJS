@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Figuras</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Figuras Geométricas</h1>
+    <p>Este es el primer taller del curso práctico de JavaScript 💚</p>
+  </header>
+
+  <section class="main">
+
+    <article class="main__figuras">
+      <h2>CUADRADO</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M16 0v2h-8v-2h8zm0 24v-2h-8v2h8zm2-22h4v4h2v-6h-6v2zm-18 14h2v-8h-2v8zm2-10v-4h4v-2h-6v6h2zm22 2h-2v8h2v-8zm-2 10v4h-4v2h6v-6h-2zm-16 4h-4v-4h-2v6h6v-2z" />
+      </svg>
+      <p class="result" id="main__figuras-result-cuadrado"></p>
+      <form action="" class="main__figuras-form">
+        <label for="inputCuadrado">Escribe cuánto mide cada lado de su cuadrado en centímetros.</label>
+        <input class="input" id="inputCuadrado" type="number" placeholder="Type a number">
+        <button type="button" onclick="perimetroCuadrado()">Calcular perímetro</button>
+        <button type="button" onclick="areaCuadrado()">Calcular Área</button>
+      </form>
+    </article>
+
+    <article class="main__figuras">
+      <h2>TRIÁNGULO</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" />
+      </svg>
+      <p class="result" id="main__figuras-result-triangulo"></p>
+      <form action="" class="main__figuras-form">
+        <label for="inputTriangulo">Escribe cuánto mide cada uno de los lados del triángulo en centímetros y su altura.</label>
+        <div class="form__input-tri">
+          <input class="input tri" id="inputTrianguloA" type="number" placeholder="lado A">
+          <input class="input tri" id="inputTrianguloB" type="number" placeholder="lado B">
+          <input class="input tri" id="inputTrianguloC" type="number" placeholder="base">
+          <input class="input tri" id="inputTriangulo" type="number" placeholder="altura">
+        </div>
+        <button type="button" onclick="perimetroTriangulo()">Calcular perímetro</button>
+        <button type="button" onclick="areaTriangulo()">Calcular Área</button>
+      </form>
+    </article>
+
+    <article class="main__figuras">
+      <h2>CÍRCULO</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M4.262 18.324l-1.42 1.42c-1.77-2.09-2.842-4.79-2.842-7.744s1.072-5.654 2.841-7.745l1.42 1.42c-1.411 1.725-2.261 3.928-2.261 6.325s.85 4.6 2.262 6.324zm17.738-6.324c0 2.397-.85 4.6-2.262 6.324l1.42 1.42c1.77-2.09 2.842-4.79 2.842-7.744s-1.072-5.654-2.842-7.745l-1.42 1.42c1.412 1.725 2.262 3.928 2.262 6.325zm-16.324-7.738c1.724-1.412 3.927-2.262 6.324-2.262s4.6.85 6.324 2.262l1.42-1.42c-2.091-1.77-4.791-2.842-7.744-2.842-2.954 0-5.654 1.072-7.744 2.842l1.42 1.42zm12.648 15.476c-1.724 1.412-3.927 2.262-6.324 2.262s-4.6-.85-6.324-2.262l-1.42 1.42c2.09 1.77 4.79 2.842 7.744 2.842 2.953 0 5.653-1.072 7.744-2.842l-1.42-1.42z" />
+      </svg>
+      <p class="result" id="main__figuras-result-circulo"></p>
+      <form action="" class="main__figuras-form">
+        <label for="inputCirculo">Escribe cuánto mide el radio del círculo en centímetros.</label>
+        <input class="input" id="inputCirculo" type="number" placeholder="radio">
+        <button type="button" onclick="perimetroCirculo()">Calcular perímetro</button>
+        <button type="button" onclick="areaCirculo()">Calcular Área</button>
+      </form>
+    </article>
+
+  </section>
+  <script src="./app.js"></script>
+</body>
+
+</html>
