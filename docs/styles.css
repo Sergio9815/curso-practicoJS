@@ -29,6 +29,7 @@ body {
 
 p{
   color: rgba(243, 244, 245, 0.856);
+  text-align: center;
 }
 
 .main {
@@ -37,6 +38,7 @@ p{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .main__figuras {
