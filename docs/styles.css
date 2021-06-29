@@ -33,7 +33,7 @@ p{
 }
 
 .main {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,4 +123,8 @@ button:hover {
 
 .tri {
   width: 75px;
+}
+
+.triIC {
+  width: 150px;
 }

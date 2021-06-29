@@ -2,6 +2,8 @@
 //ABRIR console.group("NOMBRE")
 //CERRAR console.groupEnd()
 
+import { alturaIsoceles } from './Retos/reto_02.js';
+
 //  CUADRADO
 // ---------------------------------------------------------------------------
 
@@ -34,9 +36,9 @@ const result2 = document.getElementById('main__figuras-result-triangulo')
 
 function perimetroTriangulo() {
   const ladoA = document.getElementById('inputTrianguloA')
-  const ladoB= document.getElementById('inputTrianguloB')
+  const ladoB = document.getElementById('inputTrianguloB')
   const ladoC = document.getElementById('inputTrianguloC')
-  
+
   let data = triPerimetro(parseFloat(ladoA.value), parseFloat(ladoB.value), parseFloat(ladoC.value))
   result2.innerHTML = `${data.toFixed(2)} cm`
 }
@@ -44,7 +46,7 @@ function perimetroTriangulo() {
 function areaTriangulo() {
   const ladoC = document.getElementById('inputTrianguloC')
   const altura = document.getElementById('inputTriangulo')
-  
+
   let data = triArea(parseFloat(ladoC.value), parseFloat(altura.value))
   result2.innerHTML = `${data.toFixed(2)} cm^2`
 }
@@ -67,7 +69,7 @@ const result3 = document.getElementById('main__figuras-result-circulo')
 
 function perimetroCirculo() {
   const radio = document.getElementById('inputCirculo')
-  
+
   let data = cirPerimetro(parseFloat(radio.value))
   result3.innerHTML = `${data.toFixed(2)} cm`
 }
@@ -78,3 +80,22 @@ function areaCirculo() {
   let data = cirArea(parseFloat(radio.value))
   result3.innerHTML = `${data.toFixed(2)} cm^2`
 }
+
+//  TRIANGULO ISÓSCELES
+// ---------------------------------------------------------------------------
+const btn = document.getElementById('btn-TrIcBase')
+
+btn.addEventListener('click', function alturaISO() {
+
+  const result4 = document.getElementById('main__figuras-result-trIso')
+
+  const ladoA = document.getElementById('inputTrIcA')
+  const ladoB = document.getElementById('inputTrIcB')
+  const ladoC = document.getElementById('inputTrIcBase')
+
+  const data = alturaIsoceles(parseFloat(ladoA.value), parseFloat(ladoB.value), parseFloat(ladoC.value))
+  
+  data >= 0
+    ? result4.innerHTML = `${data} cm`
+    : alert(data)
+})

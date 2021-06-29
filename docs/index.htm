@@ -43,7 +43,8 @@
       </svg>
       <p class="result" id="main__figuras-result-triangulo"></p>
       <form action="" class="main__figuras-form">
-        <label for="inputTriangulo">Escribe cuánto mide cada uno de los lados del triángulo en centímetros y su altura.</label>
+        <label for="inputTriangulo">Escribe cuánto mide cada uno de los lados del triángulo en centímetros y su
+          altura.</label>
         <div class="form__input-tri">
           <input class="input tri" id="inputTrianguloA" type="number" placeholder="lado A">
           <input class="input tri" id="inputTrianguloB" type="number" placeholder="lado B">
@@ -70,8 +71,29 @@
       </form>
     </article>
 
+    <article class="main__figuras">
+      <h2>TRIÁNGULO ISÓSCELES</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512">
+        <g data-name="&lt;Group&gt;">
+          <path
+            d="M87.021,50.732A8,8,0,0,0,73,56V456a8,8,0,0,0,8,8H431a8,8,0,0,0,6.021-13.268ZM89,448V77.292L413.37,448Z"
+            data-name="&lt;Compound Path&gt;" />
+        </g>
+      </svg>
+      <p class="result" id="main__figuras-result-trIso"></p>
+      <form action="" class="main__figuras-form">
+        <label for="inputTrIcBase">Escribe cuánto miden los lados en centímetros.</label>
+        <div class="form__input-tri">
+          <input class="input triIC" id="inputTrIcA" type="number" placeholder="lado A">
+          <input class="input triIC" id="inputTrIcB" type="number" placeholder="lado B">
+        </div>
+        <input class="input" id="inputTrIcBase" type="number" placeholder="base">
+        <button type="button" id="btn-TrIcBase">Calcular ALTURA</button>
+      </form>
+    </article>
+
   </section>
-  <script src="./app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 
 </html>

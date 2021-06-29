@@ -4,14 +4,14 @@
 // La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
 // La función debe retornar la altura del triángulo.
 
-errors = [
+let errors = [
   {
     name: 'Error 1',
-    message: 'Ooops, los lados a y b son distintos.'
+    message: '😵 Ooops, los lados a y b son distintos.'
   },
   {
     name: 'Error 2',
-    message: 'No corresponde a un triángulo isósceles.'
+    message: '🤔 No corresponde a un triángulo isósceles.'
   },
 ]
 
@@ -35,5 +35,4 @@ function alturaIsoceles(lado1, lado2, base) {
   return value
 }
 
-result = alturaIsoceles(4, 4, 6)
-console.log(result)
+export { alturaIsoceles }
