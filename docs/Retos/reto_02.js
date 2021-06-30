@@ -4,7 +4,7 @@
 // La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
 // La función debe retornar la altura del triángulo.
 
-let errors = [
+const errors = [
   {
     name: 'Error 1',
     message: '😵 Ooops, los lados a y b son distintos.'
@@ -15,10 +15,10 @@ let errors = [
   },
 ]
 
-let calculate = (lados, base) => {
+const calculate = (lados, base) => {
   let a = Math.pow(lados, 2)
   let b = (Math.pow(base, 2)) / 4
-  let altura = parseFloat(Math.sqrt(a - b)).toFixed(2)
+  const altura = parseFloat(Math.sqrt(a - b)).toFixed(2)
   return altura;
 }
 
