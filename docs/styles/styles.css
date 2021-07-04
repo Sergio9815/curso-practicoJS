@@ -1,14 +1,21 @@
+:root {
+  --yellow: #FFE268;
+  --black: #0B090A;
+  --black-2: rgba(0, 0, 0, 0.432);
+  --black-3: rgba(0, 0, 0, 0.671);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #0B090A;
   
 }
 
 body {
-  background-color: #0B090A;
-  color: white;
+  background-color: var(--yellow);
   min-height: 100vh;
-	width: 95%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -18,34 +25,103 @@ body {
   height: 200px;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
-  flex-direction: column;
-  padding-left: 50px;
+  gap: 100px;
+  border: 2px solid var(--black);
+  margin-top: 20px;
+  margin-bottom: -30px;
 }
 
-.header__title {
-  font-size: 36px;
+.header__info{
+  width: 400px;
+}
+
+.header__info-title {
+  font-size: 40px;
+  font-weight: normal;
   letter-spacing: 2px;
+  margin: 0;
 }
 
-.slide__title {
-  z-index: 1;
+.header__links {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.slide__img {
-  z-index: 0;
-  top: 0;
+.fsize {
+  font-size: 25px;
+  color: var(--yellow);
 }
 
-.slide__btn {
-  width: 200px;
-  height: 30px;
-  background-color: #86dfb1; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.header__links-btn {
   font-size: 16px;
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 14px;
+  font-weight: 500;
+  width: 215px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__links-btn:hover {
+  background-color: var(--black-2);
+}
+
+.slide__info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slide__info-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.slide__info-desc {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 150px;
+}
+
+path {
+  fill: var(--black-3);
+}
+
+.slide__info-btn {
+  font-size: 14px;
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 7px;
+  font-weight: 500;
+  width: 200px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.slide__info-btn:hover {
+  background-color: var(--black-2);
 }

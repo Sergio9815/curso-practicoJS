@@ -3,14 +3,14 @@
   display: block;
   top: 50%;
   z-index: 2;
-  color: white;
+  color: #0B090A;
   text-transform: uppercase;
   width: 50px;
   padding: 9px 12px;
   background-color: transparent;
   /* --- --- -- SOLO FLECHAS -- --- --- */
   /* border: none; */
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #0B090A;
   border-radius: 4px;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
   text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
@@ -39,7 +39,7 @@
 }
 
 .glide__arrow:hover {
-  border-color: white;
+  border-color: #0B090A;
   color: white;
   opacity: 100%;
 }
@@ -80,7 +80,7 @@
 /* --- --- -- ESTILO INDICADORES -- --- --- */
 
 .glide__bullet {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.432);
   width: 30px;
   height: 3px;
   padding: 0;
@@ -101,12 +101,12 @@
 
 .glide__bullet:hover,
 .glide__bullet:focus {
-  border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #0B090A;
+  background-color: #0B090A;
 }
 
 .glide__bullet--active {
-  background-color: white;
+  background-color: #0B090A;
 }
 
 .glide--swipeable {

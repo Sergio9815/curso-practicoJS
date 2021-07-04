@@ -1,12 +1,12 @@
 var glide = new Glide('.glide', {
   type: 'slider',
-  perView: 3,
+  perView: 2,
   focusAt: 0,
   bound: true,
   rewind: true,
   hoverpause: true,
   autoplay: "5000",
-  gap: -1,
+  gap: -2,
   breakpoints: {
     980: {
       perView: 3
