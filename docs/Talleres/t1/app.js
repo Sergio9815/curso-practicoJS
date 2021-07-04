@@ -2,7 +2,7 @@
 //ABRIR console.group("NOMBRE")
 //CERRAR console.groupEnd()
 
-import { alturaIsoceles } from './Retos/reto_02.js';
+import { alturaIsoceles } from '../../Retos/reto_02.js';
 
 //  CUADRADO
 // ---------------------------------------------------------------------------
