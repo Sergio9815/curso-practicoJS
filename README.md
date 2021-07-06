@@ -1,5 +1,6 @@
 # platzi-curso-practico-javascript
 
+![](docs/images/demo.png)
 ...
 
 ## Taller #1: figuras geométricas
@@ -9,7 +10,6 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 
-![](docs/images/demo.png)
 
 ## Taller #2: porcentaajes y descuentos
 
