@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/iconmonstr-tag-23-240.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Precios y descuentos</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <section class="header__nav-links">
+        <a class="header__links-btn" href="../../index.html"> <i class="fas fa-home fcolor"></i>HOME</a>
+        <a class="header__links-btn" href="https://github.com/Sergio9815/curso-practicoJS"><i
+            class="fab fa-github fcolor"></i>GITHUB</a>
+      </section>
+
+    </nav>
+    <section class="header__info">
+      <h1 class="header__info-title">Porcentajes y descuentos %</h1>
+      <p class="header__info-desc">Este es el segundo taller del curso práctico de JavaScript 💜</p>
+    </section>
+  </header>
+
+  <section class="main">
+      <form action="" class="main__desc-form">
+        <label for="inputPrecio">¿Cuál es el precio a pagar?</label>
+        <input class="input" id="inputPrecio" type="number" placeholder="$ 20.00">
+        <label for="inputDesc">Indique el porcentaje de descuento</label>
+        <input class="input" id="inputDesc" type="number" placeholder="15 %">
+        <button type="button" id="CalcularDesc" >Calcular descuento</button>
+      </form>
+      <span class="result" id="main__result">PRECIO A PAGAR 😏</span>
+  </section>
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
