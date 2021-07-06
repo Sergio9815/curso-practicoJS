@@ -9,7 +9,6 @@
   box-sizing: border-box;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #0B090A;
-  
 }
 
 body {
@@ -17,22 +16,68 @@ body {
   min-height: 100vh;
 	width: 80%;
 	margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
   display: flex;
   width: 100%;
-  height: 200px;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 100px;
+  height: 236px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   border: 2px solid var(--black);
-  margin-top: 20px;
-  margin-bottom: -30px;
+  margin-bottom: -40px;
+}
+
+.header__nav { 
+  width: 100%;
+  background-color: var(--black);
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__nav a{
+  color:#FFE268 ;
+}
+
+.header__nav-links{
+  /* width: 250px; */
+  width: 116px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fcolor {
+  color: var(--yellow);
+}
+
+.header__links-btn {
+  color: var(--yellow);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.header__links-btn:hover {
+  border-bottom: 2px solid var(--yellow);
 }
 
 .header__info{
-  width: 400px;
+  width: 90%;
+  text-align: center;
 }
 
 .header__info-title {
@@ -40,43 +85,6 @@ body {
   font-weight: normal;
   letter-spacing: 2px;
   margin: 0;
-}
-
-.header__links {
-  width: 400px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.fsize {
-  font-size: 25px;
-  color: var(--yellow);
-}
-
-.header__links-btn {
-  font-size: 16px;
-  background-color: var(--black);
-  color: var(--yellow);
-  padding: 14px;
-  font-weight: 500;
-  width: 215px;
-  letter-spacing: 2px;
-  border-radius: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: 0.5s;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header__links-btn:hover {
-  background-color: var(--black-2);
 }
 
 .slide__info {
@@ -124,4 +132,22 @@ path {
 
 .slide__info-btn:hover {
   background-color: var(--black-2);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 512px) {
+  .header__info-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header__info-title {
+    font-size: 20px;
+  }
+
+  .header__info-desc {
+    font-size: 14px;
+  }
 }

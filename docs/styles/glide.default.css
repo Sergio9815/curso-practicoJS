@@ -38,7 +38,7 @@
 /* --- --- -- CONTENEDOR DE SLIDES -- --- --- */
 
 .glide__slide {
-  width: 100%;
+  width: 90%;
   height: 100%;
   flex-shrink: 0;
   margin-top: 25px;
@@ -53,7 +53,7 @@
 
 .glide__slide {
   border: 2px solid #0B090A;
-  width: 200px;
+  width: 100px;
   height: 350px;
 }
 

@@ -1,6 +1,6 @@
 var glide = new Glide('.glide', {
   type: 'slider',
-  perView: 2,
+  perView: 3,
   focusAt: 0,
   bound: true,
   rewind: true,
