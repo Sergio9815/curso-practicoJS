@@ -114,15 +114,32 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 660px) {
-  .header__info-title {
-    font-size: 28px;
+@media screen and (max-width: 780px) {
+  body {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header {
+    height: 200px;
+    margin-top: 0px;
+    gap: 25px;
+    border: 2px solid var(--black);
+  }
+
+  .main {
+    border: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 466px) {
+
   .header__info-title {
-    font-size: 25px;
+    font-size: 30px;
+  }
+
+  .header__info-desc {
+    font-size: 14px;
   }
 }
 

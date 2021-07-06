@@ -123,3 +123,38 @@ button:hover {
 .triIC {
   width: 150px;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 780px) {
+  body {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header {
+    height: 200px;
+    margin-top: 0px;
+    gap: 25px;
+    border: 2px solid var(--black);
+  }
+  
+  .header__info-title {
+    font-size: 40px;
+  }
+
+  .main {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 466px) {
+
+  .header__info-title {
+    font-size: 30px;
+  }
+
+  .header__info-desc {
+    font-size: 14px;
+  }
+}
