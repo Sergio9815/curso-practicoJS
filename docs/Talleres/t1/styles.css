@@ -1,9 +1,9 @@
 :root {
-  --main: #87D1AB;
+  --main: #87d1ab;
 }
 
-.header__nav a{
-  color:var(--main);
+.header__nav a {
+  color: var(--main);
 }
 
 .fcolor {
@@ -12,24 +12,20 @@
 
 .header {
   height: 200px;
-  margin-top: 10px;
   gap: 20px;
 }
 
-.header__nav { 
+.header__nav {
   height: 40px;
 }
 
 .main {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
-  border: 2px solid var(--black);
   margin-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .main__figuras {
@@ -42,13 +38,13 @@
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   letter-spacing: 3px;
   text-align: center;
 }
 
-.main__figuras-form{
-  font-family: 'Josefin Sans', sans-serif;
+.main__figuras-form {
+  font-family: "Josefin Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +68,7 @@ path {
 }
 
 label {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -127,29 +123,16 @@ button:hover {
 /* ------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 780px) {
-  body {
-    width: 100%;
-    justify-content: flex-start;
+  .main {
+    grid-template-columns: 1fr;
   }
 
-  .header {
-    height: 200px;
-    margin-top: 0px;
-    gap: 25px;
-    border: 2px solid var(--black);
-  }
-  
   .header__info-title {
     font-size: 40px;
-  }
-
-  .main {
-    border: none;
   }
 }
 
 @media screen and (max-width: 466px) {
-
   .header__info-title {
     font-size: 30px;
   }

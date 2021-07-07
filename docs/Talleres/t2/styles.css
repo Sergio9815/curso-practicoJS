@@ -11,10 +11,9 @@
 }
 
 .header {
-  height: 150px;
-  margin-top: 10px;
-  gap: 10px;
-  margin-bottom: -6px;
+  height: 200px;
+  gap: 20px;
+  margin-bottom: 10px;
 }
 
 .header__nav { 
@@ -29,7 +28,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border: 2px solid var(--black);
   margin-bottom: 50px;
   margin: auto;
 }
@@ -112,32 +110,13 @@ button:hover {
   .main__desc-form {
     width: 70%;
   }
-}
-
-@media screen and (max-width: 780px) {
-  body {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .header {
-    height: 200px;
-    margin-top: 0px;
-    gap: 25px;
-    border: 2px solid var(--black);
-  }
-
-  .main {
-    border: none;
-  }
-}
-
-@media screen and (max-width: 466px) {
 
   .header__info-title {
-    font-size: 30px;
+    font-size: 29px;
   }
+}
 
+@media screen and (max-width: 480px) {
   .header__info-desc {
     font-size: 14px;
   }
