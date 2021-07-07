@@ -1,6 +1,4 @@
-# platzi-curso-practico-javascript
-
-![](docs/images/demo.png)
+![](docs/images/Demo.png)
 ...
 
 ## Taller #1: figuras geométricas
