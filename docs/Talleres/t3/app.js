@@ -1,13 +1,110 @@
 //  PROMEDIO, MODA, MEDIANA
 // ---------------------------------------------------------------------------
 
-function calcularPromedio(list) {
+const promedio = document.getElementById("promedio");
+const mediana = document.getElementById("mediana");
+const moda = document.getElementById("moda");
+const btn_Calcular = document.getElementById('calcular')
+const main__result = document.getElementById('main__result')
+let selection = ''
+
+const buttons = [
+  { name: 'promedio', value: promedio },
+  { name: 'mediana', value: mediana },
+  { name: 'moda', value: moda },
+]
+
+function getList() {
+  const list = document.getElementById('inputValues').value
   let nums = list.toString().split(",").map((value) => parseInt(value));
+  return nums
+}
+
+function active(btn) {
+  buttons.forEach((element) => {
+    element.value === btn
+      ? element.value.classList.add('active')
+      : element.value.classList.remove('active')
+  })
+}
+
+// ---------------------------------------------------------------------------
+// PROMEDIO
+
+function calcularPromedio(nums) {
   let totalSuma = nums.reduce((acumlador, value) => acumlador + value)
   let promedio = totalSuma / nums.length
   return promedio
 }
 
-let result = calcularPromedio('1,14,151,98')
+promedio.addEventListener('click', (ev) => {
+  const option = ev.target.dataset.option;
+  selection = option
+  active(promedio)
+})
 
-console.log(`El promedio es: ${result}`);
+// ---------------------------------------------------------------------------
+// MEDIANA
+
+const esPar = (num) => {
+  if (num % 2 === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+function calcularMediana(nums) {
+  let a = nums[parseInt((nums.length) / 2)]
+  let b = nums[parseInt((nums.length) / 2) - 1]
+
+  if (esPar(nums.length)) {
+    return calcularPromedio([a,b])
+  }
+  else {
+    return a
+  }
+}
+
+mediana.addEventListener('click', (ev) => {
+  const option = ev.target.dataset.option;
+  selection = option
+  active(mediana)
+})
+
+// ---------------------------------------------------------------------------
+// MODA
+
+moda.addEventListener('click', (ev) => {
+  const option = ev.target.dataset.option;
+  selection = option
+  active(moda)
+})
+
+// ---------------------------------------------------------------------------
+
+function calcular(opc) {
+  let nums = getList()
+  if (opc === 'promedio') {
+    let result = calcularPromedio(nums)
+    main__result.innerText = `El promedio es: ${result.toFixed(2)}`
+  }
+  else if (opc === 'mediana') {
+    let numsInOrder = nums.sort((a, b) => a - b)
+    console.log(numsInOrder);
+    let result = calcularMediana(numsInOrder)
+    main__result.innerText = `La mediana es: ${result.toFixed(2)}`
+  }
+}
+
+btn_Calcular.addEventListener('click', () => {
+  let opcion = buttons.find((e) => e.name === selection)
+  console.log(opcion);
+  if (opcion) {
+    calcular(opcion.name)
+  }
+  else {
+    alert('Oops, debe seleccionar una operación 😬')
+  }
+})
+

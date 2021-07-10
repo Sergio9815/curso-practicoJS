@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   height: 220px;
 }
 
@@ -71,7 +71,7 @@ button {
   width: 100%;
   background-color: var(--black-3);
   border: none;
-  height: 30px;
+  height: 35px;
   color: white;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ button:hover {
   color: var(--black);
   font-size: 20px;
   font-weight: bold;
-  width: 50%;
+  width: 40%;
   height: 150px;
   border-radius: 20px;
   border: 2px solid ;
@@ -113,6 +113,10 @@ button:hover {
 
   .header__info-title {
     font-size: 29px;
+  }
+  
+  label {
+    text-align: center;
   }
 }
 

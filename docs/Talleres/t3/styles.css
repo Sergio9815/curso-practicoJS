@@ -2,8 +2,8 @@
   --main: #a4cefc;
 }
 
-.header__nav a{
-  color:var(--main);
+.header__nav a {
+  color: var(--main);
 }
 
 .fcolor {
@@ -16,13 +16,13 @@
   margin-bottom: 10px;
 }
 
-.header__nav { 
+.header__nav {
   height: 40px;
 }
 
 .main {
   width: 100%;
-  height: 450px;
+  height: 480px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,8 +36,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
-  height: 220px;
+  width: 40%;
+  height: 320px;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h2 {
 
 label {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 ::placeholder {
@@ -67,11 +67,43 @@ label {
   background-color: transparent;
 }
 
+.select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.options {
+  padding: 30px;
+  width: 150px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--black-2);
+  cursor: pointer;
+  color: white;
+}
+
+.options:hover {
+  background-color: #e63947bb;
+  transition: 0.5s;
+  border: 2px solid white;
+}
+
+.active {
+  background-color: #e63947ab;
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
 button {
   width: 100%;
   background-color: var(--black-3);
   border: none;
-  height: 30px;
+  height: 35px;
   color: white;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -82,7 +114,7 @@ button {
 
 button:hover {
   color: white;
-  background-color: var(--black);
+  background-color: #e63947ab;
   transition: 1s;
 }
 
@@ -90,10 +122,10 @@ button:hover {
   color: var(--black);
   font-size: 20px;
   font-weight: bold;
-  width: 50%;
+  width: 40%;
   height: 150px;
   border-radius: 20px;
-  border: 2px solid ;
+  border: 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,18 +134,25 @@ button:hover {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 900px) {
-  .result {
-    width: 70%;
-  }
-
-  .main__desc-form {
-    width: 70%;
-  }
-
+@media screen and (max-width: 1160px) {
   .header__info-title {
     font-size: 29px;
   }
+
+  label {
+    text-align: center;
+  }
+
+  .select {
+    gap: 20px;
+  }
+
+  .options {
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -121,4 +160,3 @@ button:hover {
     font-size: 14px;
   }
 }
-
