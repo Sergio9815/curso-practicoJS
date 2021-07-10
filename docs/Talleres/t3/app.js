@@ -5,6 +5,7 @@ const promedio = document.getElementById("promedio");
 const mediana = document.getElementById("mediana");
 const moda = document.getElementById("moda");
 const btn_Calcular = document.getElementById('calcular')
+const clear = document.getElementById('clear')
 const main__result = document.getElementById('main__result')
 let selection = ''
 
@@ -13,6 +14,11 @@ const buttons = [
   { name: 'mediana', value: mediana },
   { name: 'moda', value: moda },
 ]
+
+clear.addEventListener('click', () => {
+  const list = document.getElementById('inputValues')
+  list.value = ''
+})
 
 function getList() {
   const list = document.getElementById('inputValues').value
@@ -59,7 +65,7 @@ function calcularMediana(nums) {
   let b = nums[parseInt((nums.length) / 2) - 1]
 
   if (esPar(nums.length)) {
-    return calcularPromedio([a,b])
+    return calcularPromedio([a, b])
   }
   else {
     return a
