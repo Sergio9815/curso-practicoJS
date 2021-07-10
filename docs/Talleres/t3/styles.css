@@ -55,6 +55,19 @@ label {
   color: var(--black-2);
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#clear {
+  width: 30%;
+  height: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .input {
   outline: none;
   width: 100%;
@@ -72,7 +85,6 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .options {
@@ -90,7 +102,6 @@ label {
 .options:hover {
   background-color: #e63947bb;
   transition: 0.5s;
-  border: 2px solid white;
 }
 
 .active {
@@ -110,12 +121,12 @@ button {
   outline: none;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 button:hover {
-  color: white;
-  background-color: #e63947ab;
-  transition: 1s;
+  background-color: var(--black-2);
+  transition-duration: 0.4s;
 }
 
 .result {
@@ -152,11 +163,22 @@ button:hover {
     border-radius: 2px;
   }
 
-  
+  .main__desc-form, .result {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .select {flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .header__info-desc {
     font-size: 14px;
+  }
+
+  .main__desc-form, .result {
+    width: 90%;
   }
 }

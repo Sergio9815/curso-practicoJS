@@ -78,12 +78,13 @@ button {
   outline: none;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 button:hover {
   color: white;
   background-color: var(--black);
-  transition: 1s;
+  transition-duration: 0.4s;
 }
 
 .result {
@@ -103,12 +104,8 @@ button:hover {
 /* ------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 900px) {
-  .result {
-    width: 70%;
-  }
-
-  .main__desc-form {
-    width: 70%;
+  .result, .main__desc-form {
+    width: 60%;
   }
 
   .header__info-title {
@@ -123,6 +120,10 @@ button:hover {
 @media screen and (max-width: 480px) {
   .header__info-desc {
     font-size: 14px;
+  }
+
+  .result, .main__desc-form {
+    width: 85%;
   }
 }
 
