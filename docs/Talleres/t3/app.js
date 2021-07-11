@@ -82,17 +82,16 @@ mediana.addEventListener('click', (ev) => {
 // MODA
 
 function calcularModa(nums) {
-  const lista = {}
-  nums.map((element) => {
-    if (lista[element]) {
-      lista[element] += 1
-    }
-    else {
-      lista[element] = 1
-    }
+  const arr = []
+  nums.map((a, index) => {
+    arr[index] = [a, 0]
+    nums.map((b) => {
+      a === b
+        ? arr[index][1] += 1
+        : console.log(' ');
+    })
   })
-  
-  return Object.entries(lista).sort((a, b) => a[1] - b[1]).pop()
+  return arr.sort((a, b) => a[1] - b[1]).pop()
 }
 
 moda.addEventListener('click', (ev) => {
@@ -115,9 +114,7 @@ function calcular(opc) {
     main__result.innerText = `La mediana es: ${result.toFixed(2)}`
   }
   else if (opc === 'moda') {
-    console.log(nums);
     let result = calcularModa(nums)
-    console.log(result);
     main__result.innerText = `La moda es: ${result[0]}`
   }
 }
