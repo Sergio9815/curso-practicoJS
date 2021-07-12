@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/iconmonstr-tag-23-240.png">
+  <link rel="icon" href="../assets/iconmonstr-chart-3-240.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../styles/styles.css">
   <link rel="stylesheet" href="./styles.css">
-  <title>Precios y descuentos</title>
+  <title>Análisis de salarios</title>
 </head>
 
 <body>
@@ -25,24 +25,32 @@
 
     </nav>
     <section class="header__info">
-      <h1 class="header__info-title">Porcentajes y descuentos %</h1>
-      <p class="header__info-desc">Este es el segundo taller del curso práctico de JavaScript 🔮</p>
+      <h1 class="header__info-title">Análisis de salarios</h1>
+      <p class="header__info-desc">Este es el cuarto taller del curso práctico de JavaScript 🍭</p>
     </section>
   </header>
 
   <section class="main">
-      <form action="" class="main__desc-form">
-        <label for="inputPrecio">¿Cuál es el precio a pagar?</label>
-        <input class="input" id="inputPrecio" type="number" placeholder="$ 20.00">
-        <label for="inputDesc">Indique el porcentaje de descuento</label>
-        <input class="input" id="inputDesc" type="number" placeholder="15 %">
-        <button type="button" id="CalcularDesc" >Calcular descuento</button>
-      </form>
-      <span class="result" id="main__result">PRECIO A PAGAR 😏</span>
+    <form action="" class="main__desc-form">
+      <label for="inputValues">Ingrese los valores separados por comas </label>
+      <div class="container">
+        <input class="input" id="inputValues" type="text" placeholder="Example: 15,24,2,17,50">
+        <button type="button" id="clear">Clear</button>
+      </div>
+      <label for="inputValues">Seleccione una operación</label>
+      <div class="select">
+        <div data-option="promedio" id="promedio" class="options">PROMEDIO</div>
+        <div data-option="mediana" id="mediana" class="options">MEDIANA</div>
+        <div data-option="moda" id="moda" class="options">MODA</div>
+      </div>
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+    <span class="result" id="main__result">Resultado</span>
   </section>
 
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
+  <script src="./salarios.js"></script>
+  <script type="module" src="./analisis.js"></script>
 </body>
 
 </html>
