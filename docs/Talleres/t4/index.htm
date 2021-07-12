@@ -31,21 +31,17 @@
   </header>
 
   <section class="main">
+    <h2 id="main-title">VERIFIQUE SU CAPACIDAD DE CRÉDITO</h2>
     <form action="" class="main__desc-form">
-      <label for="inputValues">Ingrese los valores separados por comas </label>
-      <div class="container">
-        <input class="input" id="inputValues" type="text" placeholder="Example: 15,24,2,17,50">
-        <button type="button" id="clear">Clear</button>
-      </div>
-      <label for="inputValues">Seleccione una operación</label>
-      <div class="select">
-        <div data-option="promedio" id="promedio" class="options">PROMEDIO</div>
-        <div data-option="mediana" id="mediana" class="options">MEDIANA</div>
-        <div data-option="moda" id="moda" class="options">MODA</div>
-      </div>
+      <label for="inputIngresos">¿Cuánto dinero recibe mensualmente?</label>
+      <input class="input" id="inputIngresos" type="number" placeholder="Indique sus ingresos totales en dólares ($)">
+      <label for="inputGastos">¿Qué monto alcanzan sus gastos totales por mes?</label>
+      <input class="input" id="inputGastos" type="number" placeholder="Indique sus gastos totales en dólares ($)">
+
       <button type="button" id="calcular">Calcular</button>
+
     </form>
-    <span class="result" id="main__result">Resultado</span>
+    <span class="result" id="main__result">(❁´◡`❁)</span>
   </section>
 
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>

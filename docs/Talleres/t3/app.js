@@ -78,7 +78,7 @@ mediana.addEventListener('click', (ev) => {
   active(mediana)
 })
 
-export { calcularMediana }  //Exporta la funcion para utilizarla en otros sitio
+// export { calcularMediana }  //Exporta la funcion para utilizarla en otros sitio
 
 // ---------------------------------------------------------------------------
 // MODA
