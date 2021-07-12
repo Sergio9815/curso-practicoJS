@@ -13,11 +13,17 @@
 .header {
   height: 200px;
   gap: 20px;
-  margin-bottom: 10px;
 }
 
 .header__nav {
   height: 40px;
+}
+
+.header-decoration {
+  height: 54px;
+  margin-top: 40px;
+  background: linear-gradient(to top left, transparent 50%, var(--gray) 51%);
+  margin-bottom: 0px;
 }
 
 .main {
@@ -30,6 +36,10 @@
   gap: 20px;
   margin-bottom: 50px;
   margin: auto;
+}
+
+#main-title {
+  text-align: center;
 }
 
 .main__desc-form {
@@ -165,6 +175,12 @@ button:hover {
 
   .main__desc-form, .result {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #main-title {
+    font-size: 22px;
   }
 }
 

@@ -19,6 +19,13 @@
   height: 40px;
 }
 
+.header-decoration {
+  height: 54px;
+  margin-top: 40px;
+  background: linear-gradient(to top left, transparent 50%, var(--gray) 51%);
+  margin-bottom: -30px;
+}
+
 .main {
   width: 100%;
   display: grid;

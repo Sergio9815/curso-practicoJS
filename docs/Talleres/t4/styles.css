@@ -13,11 +13,17 @@
 .header {
   height: 200px;
   gap: 20px;
-  margin-bottom: 10px;
 }
 
 .header__nav {
   height: 40px;
+}
+
+.header-decoration {
+  height: 54px;
+  margin-top: 40px;
+  background: linear-gradient(to top left, transparent 50%, var(--gray) 51%);
+  margin-bottom: 0px;
 }
 
 .main {
